@@ -1,0 +1,4 @@
+*.psd
+node_modules/
+css-animation-20170528T153926Z-001/
+.sublime-gulp.cache

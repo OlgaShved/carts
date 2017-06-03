@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="prod/images/favicon.png">
+
+	<title>CSS3 Animation Demo</title>
+
+	<!-- Custom styles for this template -->
+	<link href="prod/css/main.css" rel="stylesheet">
+
+	<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+	<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+	<div class="container">
+
+		<h1 class="title">Animation Demo</h1>
+
+		<div class="flexSection">
+			<p class="column lead">Click any green element!</p>
+
+			<svg class="column" xmlns="http://www.w3.org/2000/svg" width="136.5" height="50.5" viewBox="0 0 136.5 50.5">
+			  <path id="beetroot" fill="#77c167" d="M145.365,24.564a36.08,36.08,0,0,0-9.09,10.35c22.25-7.5,19.895,25.751-.778,21.46a29.153,29.153,0,0,1-4.156,13.64c0.58-4.514,2.5-8.785-1.038-13.892-2.019-2.913-9.825-1.845-12.467-4.8-7.339-8.2.569-21.57,11.948-15.651-1.22-3.867-2.13-11.974.258-16.158,1.771-.123,2.4.862,3.637,1.262,0.54,0.556-.412,1.084-0.262,2.019,0.713-.908,1.167-2.065,1.819-3.029a6.5,6.5,0,0,1,3.378,2.274c-0.653,1.554-1.5,2.912-2.079,4.543,1.963-.953,3.925-4.095,6.753-5.05,1.425,0.3,1.447,1.959,2.077,3.029" transform="translate(-80 -17)"/>
+
+			  <animateTransform
+					xlink:href="#beetroot"
+					attributeName="transform"
+					type="translate"
+					dur="3s"
+					begin="click"
+					values="-80 -17; -60 -20; -80 0; -100 -20; -80 -17; -80 -17;"
+					keyTimes="0; 0.1; 0.2; 0.3; 0.4; 1"
+					fill="freeze"
+			  />
+			</svg>
+		</div>
+
+		<div class="wrapper3d wrapper3d--red">
+			<div class="front">
+				<img src="prod/images/rubashka.png" alt="rubashka"/>
+			</div>
+			<div class="back">
+				<div class="top">
+					<h3 class="number">6</h3>
+					<p class="figure"><span class="icon-heart"></span></p>
+				</div>
+				<div class="bottom">
+					<h3 class="number">6</h3>
+					<p class="figure"><span class="icon-heart"></span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper3d wrapper3d--red">
+			<div class="front">
+				<img src="prod/images/rubashka.png" alt="rubashka"/>
+			</div>
+			<div class="back">
+				<div class="top">
+					<h3 class="number">7</h3>
+					<p class="figure"><span class="icon-diamonds"></span></p>
+				</div>
+				<div class="bottom">
+					<h3 class="number">7</h3>
+					<p class="figure"><span class="icon-diamonds"></span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper3d">
+			<div class="front">
+				<img src="prod/images/rubashka.png" alt="rubashka"/>
+			</div>
+			<div class="back">
+				<div class="top">
+					<h3 class="number">8</h3>
+					<p class="figure"><span class="icon-clubs"></span></p>
+				</div>
+				<div class="bottom">
+					<h3 class="number">8</h3>
+					<p class="figure"><span class="icon-clubs"></span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper3d">
+			<div class="front">
+				<img src="prod/images/rubashka.png" alt="rubashka"/>
+			</div>
+			<div class="back">
+				<div class="top">
+					<h3 class="number">9</h3>
+					<p class="figure"><span class="icon-spades"></span></p>
+				</div>
+				<div class="bottom">
+					<h3 class="number">9</h3>
+					<p class="figure"><span class="icon-spades"></span></p>
+				</div>
+			</div>
+		</div>
+
+	</div><!-- /.container -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="prod/js/main.js"></script>
+
+</body>
+</html>
